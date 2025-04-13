@@ -10,8 +10,11 @@ app.get('/', (req, res) => {
 
 //send file
 app.get('/about', (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"))
+//   res.sendFile(path.join(__dirname, "index.html"))
+    res.json({"azmeer": 21})
 })
+
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
